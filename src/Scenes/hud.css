@@ -1,0 +1,58 @@
+html {
+  font-size: min(100vw / 120, 100vh / 67.5);
+}
+
+#hud {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+
+  font-family: sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+
+#scoreTitle {
+  position: absolute;
+  left: 2rem;
+  top: 1.5rem;
+  width: 10rem;
+  height: 3rem;
+}
+
+#scoreValue {
+  position: absolute;
+  left: 9rem;
+  top: 1.5rem;
+  width: 10rem;
+  height: 3rem;
+}
+#vidas {
+  position: absolute;
+  left: 2rem;
+  top: 5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.vida {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+}
+
+.vida[hidden] {
+  display: none;
+}
+#pauseMenu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1.5rem;
+  background: #222;
+  color: white;
+  text-align: center;
+  pointer-events: auto;
+}
